@@ -2,13 +2,11 @@
 
 $a = rand(1,10);
 $b = rand(1,10);
-
 $c = $a + $b;
-// echo $c;
 ?>
 <center>
 <h2>Form Perhitungan</h2>
-    <form action="result.php" method="POST">
+    <form action="formhasilinputdata.php" method="POST">
     <?php echo '<input type="hidden" name="jawaban_soal" value="'.$c.'" id="jawaban_soal">' ?>
         <table>
             <tr>
@@ -31,12 +29,12 @@ $c = $a + $b;
             </tr>
             <tr>
                 <td>
-                    <label for="gender">Gender </label>
+                    <label for="jk">Jenis Kelamin </label>
                 </td>
                 <td>
                     :
-                    <input type="radio" name="gender" id="cowok" value="cowok">Cowok
-                    <input type="radio" name="gender" id="cowok" value="cewek">Cewek
+                    <input type="radio" name="jk" id="cowok" value="cowok">Cowok
+                    <input type="radio" name="jk" id="cewek" value="cewek">Cewek
                 </td>
             </tr>
             <tr>
@@ -50,7 +48,7 @@ $c = $a + $b;
             </tr>
             <tr>
                 <td>
-                    Soal
+                    Hitung
                 </td>
                 <td>
                     <p>:
@@ -60,7 +58,7 @@ $c = $a + $b;
             </tr>
             <tr>
                 <td>
-                    <label for="jawab2">Jawaban</label>
+                    <label for="jawab2">Jawab</label>
                 </td>
                 <td>
                 :
@@ -69,7 +67,10 @@ $c = $a + $b;
             </tr>
             <tr>
                 <td>
-                    <button type="submit" name="submit">Submit</button>
+                    <button type="submit" name="submit">Simpan</button>
+                </td>
+                <td>
+                    <button type="reset" name="reset">Batal</button>
                 </td>
             </tr>
         </table>

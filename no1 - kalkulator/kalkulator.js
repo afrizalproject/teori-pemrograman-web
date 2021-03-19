@@ -1,5 +1,8 @@
 function kalkulator() {
 
+    // Muhammad Afrizal Rizky Widyanto (19650048)
+    // Kelas: Pemrograman Web F
+
     //variable angka satu
     var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
 

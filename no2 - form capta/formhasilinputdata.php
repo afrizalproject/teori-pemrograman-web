@@ -3,7 +3,7 @@
 $bio = array(
     'nama' => $_POST['name'],
     'alamat' => $_POST['address'],
-    'gender' => $_POST['gender'],
+    'jk' => $_POST['jk'],
     'email' => $_POST['email'],
     'jawaban_soal' => $_POST['jawaban_soal'],
     'jawaban_user' => $_POST['jawaban_user'],

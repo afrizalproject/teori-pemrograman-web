@@ -12,7 +12,7 @@ function kalkulator() {
     //variable angka hasil
     var hasil = document.getElementById("hasil");
 
-    //variable untuk total angka satu dan angka dua
+    //variable untuk menampung total angka satu dan angka dua
     var total;
 
     if (isNaN(angkaSatu) || isNaN(angkaDua)) {

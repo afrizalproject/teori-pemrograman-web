@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
-    <!-- <link rel="stylesheet" href="kalkulator.css"> -->
+    <title>Kalkulator - M. Afrizal Rizky W (19650048)</title>
 </head>
 
 <body>
     <div class="container">
-        <header style="text-align: center;">
-            Kalkulator
-        </header>
         <form action="hasilkalkulator.php" name="calculator" method="POST">
             <table align="center">
                 <tr>
-                    <td class="txt-box">Value1: </td>
+                    <th colspan="2" style="text-align: left;">FORM HITUNG</th>
+                </tr>
+                <tr>
+                    <td class="txt-box">Value 1 </td>
                     <td><input type="number" placeholder="masukkan angka1" name="angkaSatu" id="angkaSatu"></td>
                 </tr>
                 <tr>
-                    <td class="txt-box">Value2: </td>
+                    <td class="txt-box">Value 2 </td>
                     <td><input type="number" placeholder="masukkan angka2" name="angkaDua" id="angkaDua"></td>
                 </tr>
                 <tr>
@@ -41,7 +39,7 @@
                 <tr>
                     <td colspan="3" align="center">
                         <input type="submit" onclick="kalkulator()" value="Hitung">
-                        <button type="reset" class="tombol reset">Reset</button>
+                        <button type="reset" class="tombol reset">Clear</button>
                     </td>
                 </tr>
             </table>

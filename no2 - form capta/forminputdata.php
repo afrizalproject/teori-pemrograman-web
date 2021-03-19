@@ -8,7 +8,7 @@ $c = $a + $b;
 ?>
 <center>
 
-    <form action="formhasilinputdata.php" method="POST">
+    <form action="hasilforminputdata.php" method="POST">
     <?php echo '<input type="hidden" name="jawaban_soal" value="'.$c.'" id="jawaban_soal">' ?>
         <table>
             <tr>

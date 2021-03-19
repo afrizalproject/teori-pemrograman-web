@@ -1,16 +1,19 @@
 <?php
-
-$bio = array(
-    'nama' => $_POST['name'],
-    'alamat' => $_POST['address'],
-    'jk' => $_POST['jk'],
+// Muhammad Afrizal Rizky Widyanto (19650048)
+// Kelas: Pemrograman Web F
+$datainput = array(
+    'nama' => $_POST['nama'],
+    'alamat' => $_POST['alamat'],
     'email' => $_POST['email'],
+    'jenis_kelamin' => $_POST['jk']
+);
+
+$jawaban=array(
     'jawaban_soal' => $_POST['jawaban_soal'],
     'jawaban_user' => $_POST['jawaban_user'],
 );
 
-
-if ($bio['jawaban_soal'] == $bio['jawaban_user']) {
+if ($jawaban['jawaban_soal'] == $jawaban['jawaban_user']) {
  ?>
 
 <style>
@@ -19,31 +22,27 @@ table ,td ,tr, th{
     border: 1px solid black;
 }
 </style>
+<h2 style="margin-left: 320px;">Hasil Input Data</h2>
  <center>
-     <h2>Rsultt</h2>
  <table>
     <tr>
         <th>Nama</th>
         <th>Alamat</th>
-        <th>Gender</th>
         <th>Email</th>
-        <th>Jawaban Soal</th>
-        <th>Jawaban Usr</th>
-        <th>Hasil</th>
+        <th>Jenis Kelamin</th>
+        <th>Jawaban</th>
     </tr>
     <?php
-    foreach ($bio as $key => $b) {
-        echo "<td>$b</td>";
+    foreach ($datainput as $key => $value) {
+        echo "<th>$value</th>";
     }
-    echo "<td>Benar</td>"
+    echo "<th>Benar</th>"
     ?>
  </table>
  </center>
  <?php  
 }else{
-    echo $bio['jawaban_soal'];
-    // echo $bio['jawaban_user'];
-    echo "jawaban anda salah \n";
-    echo '<a href="index.php"> Ulang</a>';
+    echo "Maaf Jawaban Anda Salah \n";
+    echo '<a href="forminputdata.php"> Ulang</a>';
 }
 ?>

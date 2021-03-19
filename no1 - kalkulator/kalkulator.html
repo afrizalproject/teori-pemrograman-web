@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <!-- <link rel="stylesheet" href="kalkulator.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header style="text-align: center;">
+            Kalkulator
+        </header>
+        <form action="hasilkalkulator.php" name="calculator" method="POST">
+            <table align="center">
+                <tr>
+                    <td class="txt-box">Value1: </td>
+                    <td><input type="number" placeholder="masukkan angka1" name="angkaSatu" id="angkaSatu"></td>
+                </tr>
+                <tr>
+                    <td class="txt-box">Value2: </td>
+                    <td><input type="number" placeholder="masukkan angka2" name="angkaDua" id="angkaDua"></td>
+                </tr>
+                <tr>
+                    <td>Operator</td>
+                    <td>
+                        <select id="op">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                        </select>
+                    </td>
+                    <td><input type="text" readonly name="hasil" id="hasil" style="display: none;"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" onclick="kalkulator()" value="Hitung">
+                        <button type="reset" class="tombol reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="kalkulator.js" type="text/javascript"></script>
+</body>
+
+</html>

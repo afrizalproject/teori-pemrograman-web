@@ -21,7 +21,7 @@ include_once('koneksi.php')
                         <label for="name">Name</label>
                     </td>
                     <td>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" placeholder="masukkan nama" required>
                     </td>
                 </tr>
                 <tr>
@@ -29,7 +29,7 @@ include_once('koneksi.php')
                         <label for="email">Email</label>
                     </td>
                     <td>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="masukkan email" required>
                     </td>
                 </tr>
                 <tr>
@@ -37,7 +37,7 @@ include_once('koneksi.php')
                         <label for="address">Address</label>
                     </td>
                     <td>
-                        <textarea name="address" id="" cols="30" rows="10" required></textarea>
+                        <textarea name="address" id="" cols="30" rows="10" placeholder="masukkan address" required></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@ include_once('koneksi.php')
                         <label for="city">City</label>
                     </td>
                     <td>
-                        <input type="text" name="city" id="city" required>
+                        <input type="text" name="city" id="city" placeholder="masukkan kota/city" required>
                     </td>
                 </tr>
                 <tr>
@@ -53,22 +53,21 @@ include_once('koneksi.php')
                         <label for="message">Message</label>
                     </td>
                     <td>
-                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="masukkan pesan/message" required></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="submit" name="submit" style="margin: 10px;"> Insert new guest</button>
+                        <button type="submit" name="submit" style="margin: 10px;"> Insert guest baru</button>
                     </td>
                     <td>
-                        <a href="guestlist.php">Look to another guest</a>
+                        <a href="guestlist.php">Lihat Guest Lainnya</a>
                     </td>
                 </tr>
             </form>
         </table>
     </center>
 </body>
-
 </html>
 <?php
 
@@ -83,7 +82,7 @@ if (isset($_POST['submit'])) {
     VALUES ('$name','$email','$address','$city','$message',now())";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Guest created Successfully";
+        echo "Guest berhasil dibuat";
         header('location:guestlist.php');
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

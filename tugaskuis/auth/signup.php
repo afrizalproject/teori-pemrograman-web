@@ -14,7 +14,7 @@ include_once('../koneksi.php');
 <body>
     <center>
         <h2>
-            Sign Up Form
+            Sign Up
         </h2>
         <form action="" method="post">
             <table>

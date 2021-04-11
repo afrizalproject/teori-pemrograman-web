@@ -16,7 +16,7 @@ session_start();
 <body>
     <center>
         <h2>
-            Login Form
+            Login
         </h2>
         <form action="" method="post">
             <table>
@@ -48,13 +48,11 @@ session_start();
         </form>
     </center>
 </body>
-
 </html>
 <?php
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
     //to prevent from mysqli injection  
     $username = stripcslashes($username);
     $password = stripcslashes($password);
@@ -73,5 +71,4 @@ if (isset($_POST['login'])) {
         die('Password Salah');
     }
 }
-
 ?>

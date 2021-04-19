@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://tutorialweb.net/" target="_blank">TUTORIALWEB.NET</a>
+        <a class="navbar-brand" href="https://github.com/afrizalproject" target="_blank">AfrizalProject</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
